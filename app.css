@@ -143,8 +143,8 @@ body {
 
 .panel {
 	background-color: white;
-	border-radius: 10px;
-	padding: 15px 25px;
+	border-radius: 1em;
+	padding: 1em 2em;
 	width: 100%;
 	max-width: 960px;
 	display: flex;
@@ -154,7 +154,8 @@ body {
 }
 
 .pricing-plan {
-	border-bottom: 1px solid #e1f1ff;
+	border-bottom: .1em solid #e1f1ff;
+    margin: 1em 0;
 }
 
 .pricing-plan:last-child {
@@ -162,7 +163,64 @@ body {
 }
 
 .pricing-img {
-	margin-bottom: 25px;
+	margin-bottom: 2em;
     width 100%;
     max-width: 100%;
+}
+
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: .5em;
+}
+
+.pricing-features {
+    margin: 2em 0 2em;
+    color: #016ff9;
+}
+
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: .1em;
+    font-size: .9em;
+    line-height: 1.5;
+    padding: .5em 0;
+    border-top: .1em solid #e1f1ff
+}
+
+.pricing-features-item:last-child {
+    border-bottom: .1em solid #e1f1ff
+}
+
+.pricing-price {
+    color: #016ff9;
+    display: block;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.pricing-button {
+    border: .1em solid #9dd1ff;
+    border-radius: 1em;
+    color: #348efe;
+    display: inline-block;
+    padding: 1em 3em;
+    text-decoration: none;
+    margin: 2em 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus {
+    background-color: #61b5ff;
+    color: white;
+}
+
+.pricing-button.is-featured {
+    background-color: #48aaff;
+    color: white;
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus {
+    background-color: #0078e0;
+    color: white;
 }
